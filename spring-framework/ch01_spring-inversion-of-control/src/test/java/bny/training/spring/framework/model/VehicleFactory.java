@@ -20,14 +20,11 @@ package bny.training.spring.framework.model;
 public class VehicleFactory {
 
     public static Vehicle getStaticVehicle() {
-
-        //TODO: fix this.
-        return null;
+        return new Vehicle("truck", 2016);
     }
 
     public Vehicle getVehicle() {
 
-        //TODO: fix this.
-        return null;
+        return new Vehicle("bike", 2015);
     }
 }
