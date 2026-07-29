@@ -16,6 +16,8 @@
 
 package bny.training.spring.framework.model;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 // TODO: Fix this class to Autowire using a constructor
 public class ConstructorAnnotatedBulkVehicleOrder {
 
@@ -25,10 +27,12 @@ public class ConstructorAnnotatedBulkVehicleOrder {
     public ConstructorAnnotatedBulkVehicleOrder() {
     }
 
+    @Autowired
     public ConstructorAnnotatedBulkVehicleOrder(final Vehicle vehicle) {
         this.vehicle = vehicle;
     }
 
+//    @Autowired
     public ConstructorAnnotatedBulkVehicleOrder(final Vehicle vehicle, final int quantity) {
         this.vehicle = vehicle;
         this.quantity = quantity;

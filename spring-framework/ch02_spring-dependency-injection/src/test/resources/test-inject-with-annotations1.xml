@@ -22,7 +22,13 @@
             http://www.springframework.org/schema/context
             http://www.springframework.org/schema/context/spring-context.xsd">
 
+    <context:annotation-config/>
+
 <!-- create right configuration to pass the tests -->
+    <bean id="vehicle" class="bny.training.spring.framework.model.Vehicle">
+        <property name="type" value="car"/>
+        <property name="year" value="2017"/>
+    </bean>
 
-
+    <bean id="setterAnnotatedBulkVehicleOrder" class="bny.training.spring.framework.model.SetterAnnotatedBulkVehicleOrder"/>
 </beans>
